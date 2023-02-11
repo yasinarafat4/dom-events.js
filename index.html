@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM EVENTS</title>
+    <style>
+      .btn:hover,
+      .btn2:hover,
+      #blue-btn:hover,
+      #purple-btn:hover,
+      #white-btn:hover,
+      #green-btn:hover,
+      #orange-btn:hover {
+        background-color: rgb(34, 182, 227);
+        color: black;
+        border: 4px solid rgb(4, 9, 14);
+        font-size: 1em;
+        font-weight: bold;
+      }
+      .btn {
+        background-color: rgb(234, 234, 16);
+        color: rgb(7, 11, 15);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid steelblue;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      .btn2 {
+        background-color: red;
+        color: rgb(235, 237, 239);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid steelblue;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      #blue-btn {
+        background-color: rgb(51, 0, 255);
+        color: rgb(235, 237, 239);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid rgb(237, 7, 7);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      #purple-btn {
+        background-color: purple;
+        color: rgb(235, 237, 239);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid rgb(7, 156, 237);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      #green-btn {
+        background-color: green;
+        color: rgb(235, 237, 239);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid rgb(7, 156, 237);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      #orange-btn {
+        background-color: orange;
+        color: rgb(0, 3, 5);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid rgb(7, 156, 237);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      #white-btn {
+        background-color: white;
+        color: rgb(6, 9, 13);
+        font-size: 1em;
+        font-weight: bold;
+        border: 4px solid rgb(7, 156, 237);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 onclick="console.log('I am clicked')">DOM er Ajke Special Events</h1>
+    <button class="btn" onclick="console.log(4)">Click Me</button>
+    <button class="btn" onclick="console.log(44)">Another Button</button>
+
+    <br /><br />
+    <!-- option one -->
+    <button class="btn" onclick="document.body.style.backgroundColor='yellow'">
+      Make Yellow
+    </button>
+
+    <!-- option two -->
+    <button class="btn2" onclick="makeRed()">Make Red</button>
+
+    <!-- option three1 -->
+    <button id="blue-btn">Make Blue</button>
+
+    <!-- option three2 -->
+    <button id="purple-btn">Make Purple</button>
+
+    <!-- option four most of the time we use this-->
+    <!-- system1 -->
+    <button id="green-btn">Make Green</button>
+
+    <!-- system2 -->
+    <button id="orange-btn">Make Orange</button>
+    <br /><br />
+    <!-- system3 [FINAL] -->
+    <button id="white-btn">Make White</button>
+
+    <script></script>
+    <script src="js/events.js"></script>
+
+    <h2 title="Ajke Events er Mon Valo Nei">Events</h2>
+  </body>
+</html>
